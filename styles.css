@@ -105,8 +105,11 @@ hr{ height: 7px;
       
         .social-icons {
           font-size: 16px;
-         display: flex;
-        flex-wrap: wrap;
+         display: grid;
+         grid-template-columns: 20% 20% 20%;
+         margin-left: -80px;
+         grid-template-rows: 50px 50px  50px 50px  50px 50px;
+
         }
       
         .item.name {
@@ -134,6 +137,12 @@ hr{ height: 7px;
         footer {
           font-size: 12px;
         }
+        li{
+            font-size: 12px;
+        }
+        .recipe {
+            display: grid;
+            grid-template-columns:50% 50%;}
       }
       
       @media screen and (max-width: 480px) {
@@ -143,6 +152,9 @@ hr{ height: 7px;
       
         .social-icons i {
           font-size: 14px;
+          display: grid;
+          grid-template-columns: 50% 50%;
+
         }
       
         .item.name {
@@ -170,4 +182,13 @@ hr{ height: 7px;
         footer {
           font-size: 10px;
         }
+        .recipe {
+            display: grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows: 50px 50px  50px 50px  50px 50px;
+            height: 500px;
+        }
+       .search{
+        margin-top: -90px;
+       }
       }
